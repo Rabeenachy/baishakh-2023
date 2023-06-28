@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>todo list</h1>
+    <hr>
+    <form onsubmit="addTodo(event)">
+
+
+    <input required type="text" 0ld-id="title" name="title">
+    <button>add</button>
+</form>
+    <hr>
+    <ul id="todo-list">
+        
+    </ul>
+
+    <script>
+        let todos = []
+       
+        const addTodo = (event) => {
+
+            event.preventDefault()
+            // console.log(event.target)
+
+            // console.log(event.target.title.value)
+
+            
+            // console.log(event)
+            
+            // let value = document.getElementById("title").value
+            let value = event.target.title.value
+           
+            value = value.trim()
+            if (value) {
+            todos.push(value)
+            console.log(todos)
+            convertTodosArrToList();
+
+            
+            // document.getElementById("title").value = ""
+            event.target.title.value = ""
+            }else{
+                console.log("required field..");
+            }
+            
+
+    }
+
+    function convertTodosArrToList() {
+        let str = ""
+        todos.forEach(title => {
+            str += `<li> ${title} </li>`
+
+        })
+        document.getElementById("todo-list").innerHTML = str
+    }
+
+    convertTodosArrToList()
+
+        // document.getElementById("todo-list").innerHTML =`<li> ${react} </li> <li> ${node} </li> <li> ${mongodb} </li>`
+
+        
+    </script>
+</input>
+</body>
+</html>

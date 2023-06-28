@@ -1,0 +1,10 @@
+git init
+git remote add origin <your_github_url> // eg;https://github.com/Rabeenachy/baishakh-2023
+optional // yp check // git remote -v
+git status
+git add . // represent all
+git commit -m "message"
+git push
+git hints
+    u -new files / untracked files
+    a - added // ready to be published / pushed

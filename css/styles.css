@@ -1,0 +1,59 @@
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: gray;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+nav ul{
+   list-style-type: none; 
+}
+
+.active-link{
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+nav{
+    display: inline;
+}
+nav ul{
+    display: inli;
+}
+nav ul li{
+    display: inline;
+}
+
+.bold{
+    font-weight: 900;
+}
+.inline{
+    display: inline;
+}
+/* #box1,#box2,#box3{ */
+.box,
+.child{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.bold.red{
+    color: red;
+}
+.box.red{
+    background-color: red;
+}
+.parent div{
+    color: red;
+}
+.child p{
+    color: red;
+}
+

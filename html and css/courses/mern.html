@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+       td,th{
+        border: 1px solid;
+        padding: 5px 20px 5px 20px ;
+       } 
+       
+       .div{
+        background-color: #333;
+        border: 1px solid;
+        height: 200px;
+        color: white;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align:justify;
+
+       }
+       /* #g-total{
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+       }
+       #t-duration{
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+       } */
+
+       .text-center-bold{
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+        background-color: gray;
+       }
+    </style>
+</head>
+<body>
+    <h1 class="text-center-bold">mern</h1>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, laboriosam! Porro quod atque ad amet nemo,
+             voluptatum, a nam itaque quo autem quae 
+        ducimus voluptate numquam! Enim saepe dolorem quae.
+    Lorem ipsum, dolor sit amet consectetur adipisicing
+     elit. Vel eum obcaecati, maiores voluptates eaque exercitationem fugiat molestias quod labore soluta nam impedit. Veniam porro possimus illum, 
+    quam repellat optio fugit.</p>
+
+    </div>
+    <header>
+        <nav>
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">about</a></li>
+           <li> <a href="./courses/mern.html" class="active-link bold">Mern</a></li>
+        </ul>
+        </nav>
+    </header>
+    <hr>
+    <table>
+        <thead>
+        <tr>
+            <th style="border: 1px solid;">name</th>
+            <th>quantity</th>
+            <th>price</th>
+            <th>total</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>mouse</td>
+            <td>1</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>keyboard</td>
+            <td>2</td>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+        
+    </tbody>
+    <tfoot>
+        <tr>
+            <td class="text-center-bold" id="g-total" colspan="3">grand total</td>
+            <td>300</td>
+        </tr>
+    </tfoot>
+    </table>
+    <hr>
+    <table style="border:1px solid;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid;">name</th>
+                <th style="border: 1px solid;">teacher</th>
+                <th style="border: 1px solid;">duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>html</td>
+                <td>xyz</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>css</td>
+                <td>xyz</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+             <td class="text-center-bold" colspan="2" id="t-duration">total duration</td>
+             <td>15</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+</body>
+</html>

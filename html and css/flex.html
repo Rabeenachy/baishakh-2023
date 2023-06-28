@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* padding: 0; */
+        }
+        /* header{
+            display: none;
+        } */
+        nav{
+            display: flex;
+            
+        }
+        .first ul{
+            display: inline-block;
+        }
+        .first li{
+           display: inline; 
+        }
+        .logo{
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .item{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            
+        }
+        .flex-box{
+            background-color: antiquewhite;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: end;
+            align-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header class="first">
+    <nav>
+        <span class="logo">LOGO</span>
+    <ul>
+   <li> <a href="./home">home</a></li>
+   <li> <a href="./home">about</a></li>
+   <li>  <a href="./home">contact</a></li>
+</ul>
+</nav>
+</header>
+<hr>
+<header class="second">
+    <nav>
+        <span class="logo">LOGO</span>
+    <ul>
+   <li> <a href="./home">home</a></li>
+   <li> <a href="./home">about</a></li>
+   <li>  <a href="./home">contact</a></li>
+</ul>
+</nav>
+</header>
+<ul>
+    <li>
+        <span>justify-content</span>
+        <ul>
+            <li>start</li>
+            <li>end</li>
+            <li>center</li>
+            <li>space-between</li>
+        </ul>
+    </li>
+    <li>
+        <span>align-items</span>
+        <ul>
+            <li>center</li>
+        </ul>
+    </li>
+</ul>
+
+<div class="flex-box">
+<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+
+</div>
+</body>
+</html>
